@@ -1,0 +1,55 @@
+.banner{
+    position: relative;
+    background-image: url('../../images/bg-hero-mobile.svg');
+    background-color: $VeryPaleCyan;
+    background-size: cover;
+    .banner__header{
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        .header__logo{
+            width: 100px;
+        }
+
+        button{
+            padding: 0.5rem 0.5rem;
+            border: none;
+            outline: none;
+            border-radius: 2.5rem;
+            box-shadow: 2px 2px 5px 1px #f3f3f3;
+            background-color: #fff;
+            
+            
+        }
+    }
+
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        img{
+            width: 85%;
+            margin: 30px auto;
+        }
+        
+        .banner__body{
+            display: block;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .banner__text{
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: $fuenteBody;
+        }
+    }
+}
+
+.heading{
+    text-align: center;
+    font-family: $fuenteHeading;
+
+}

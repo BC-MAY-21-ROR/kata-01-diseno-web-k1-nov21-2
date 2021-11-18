@@ -1,0 +1,28 @@
+{
+  "name": "kata-01-diseno-web-k1-nov21-2",
+  "version": "1.0.0",
+  "description": "Kata 01 Diseño Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch src:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-2.git"
+  },
+  "keywords": [
+    "HTML",
+    "SASS"
+  ],
+  "author": "Derek Ayala , Alan Razo , Josue Samano , Javier Verduzco y Mauricio Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-2/issues"
+  },
+  "homepage": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-2#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
