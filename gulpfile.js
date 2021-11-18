@@ -10,7 +10,7 @@ function css(){
 }
 
 function watcharchivos(){
-  watch('./src/app.scss',css);
+  watch('src/**/*.scss',css);
 }
 
 exports.watcharchivos = watcharchivos;

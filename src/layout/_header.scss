@@ -1,55 +1,66 @@
+
 .banner{
-    position: relative;
-    background-image: url('../../images/bg-hero-mobile.svg');
     background-color: $VeryPaleCyan;
+    background-image: url('../../images/bg-hero-mobile.svg');
     background-size: cover;
-    .banner__header{
-        padding: 1.5rem 0;
+    background-position: right;
+    &__header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
         .header__logo{
-            width: 100px;
+            width: 11rem;
+            height: 2rem;
         }
-
-        button{
-            padding: 0.5rem 0.5rem;
+        .button{
+            padding: 0.8rem 2rem;
             border: none;
             outline: none;
-            border-radius: 2.5rem;
-            box-shadow: 2px 2px 5px 1px #f3f3f3;
+            font-family: $fuenteHeading;
+            border-radius: 1.9rem;
+            font-size: 1.3rem;
             background-color: #fff;
-            
-            
+            box-shadow: 1px 2px 8px 1px #d6eff1;
+            &:hover{
+                color: #a5a4a4;
+            }
         }
     }
 
-    .banner{
+    &__body{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
         display: flex;
+        gap: 5rem;
         justify-content: center;
         align-content: center;
+        align-items: center;
         flex-direction: column;
-        img{
-            width: 85%;
-            margin: 30px auto;
+        text-align: center;
+        .body__text{
+            line-height: 1.5;
+            font-size: 1.55rem;
+            margin-bottom: 3rem;
+            margin-top: 2.5rem;
         }
-        
-        .banner__body{
-            display: block;
-            padding: 10px;
+        .body__image{
+            width: 100%;
+        }
+        .button{
+            background-color: $Pink;
             border: none;
             outline: none;
-        }
-
-        .banner__text{
-            text-align: center;
-            font-size: 1.8rem;
-            font-family: $fuenteBody;
+            font-size: 1.3;
+            font-family: $fuenteHeading;
+            color: #fff;
+            padding: 1.5rem 3.5rem;
+            border-radius: 2.5rem;
+            box-shadow: 0.5px 1px 4px 0.5px hsl(322, 82%, 59%);
+            &:hover{
+                background-color: hsl(322, 87%, 75%);
+            }
         }
     }
-}
-
-.heading{
-    text-align: center;
-    font-family: $fuenteHeading;
 
 }

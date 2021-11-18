@@ -338,59 +338,76 @@ template {
 }
 
 .banner {
-  position: relative;
-  background-image: url("../../images/bg-hero-mobile.svg");
   background-color: #ebfbff;
+  background-image: url("../../images/bg-hero-mobile.svg");
   background-size: cover;
+  background-position: right;
 }
 
-.banner .banner__header {
-  padding: 1.5rem 0;
+.banner__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
 }
 
-.banner .banner__header .header__logo {
-  width: 100px;
+.banner__header .header__logo {
+  width: 11rem;
+  height: 2rem;
 }
 
-.banner .banner__header button {
-  padding: 0.5rem 0.5rem;
+.banner__header .button {
+  padding: 0.8rem 2rem;
   border: none;
   outline: none;
-  border-radius: 2.5rem;
-  box-shadow: 2px 2px 5px 1px #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.9rem;
+  font-size: 1.3rem;
   background-color: #fff;
+  box-shadow: 1px 2px 8px 1px #d6eff1;
 }
 
-.banner .banner {
+.banner__header .button:hover {
+  color: #a5a4a4;
+}
+
+.banner__body {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   display: flex;
+  gap: 5rem;
   justify-content: center;
   align-content: center;
+  align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
-.banner .banner img {
-  width: 85%;
-  margin: 30px auto;
+.banner__body .body__text {
+  line-height: 1.5;
+  font-size: 1.55rem;
+  margin-bottom: 3rem;
+  margin-top: 2.5rem;
 }
 
-.banner .banner .banner__body {
-  display: block;
-  padding: 10px;
+.banner__body .body__image {
+  width: 100%;
+}
+
+.banner__body .button {
+  background-color: #ff52bf;
   border: none;
   outline: none;
-}
-
-.banner .banner .banner__text {
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: "Open Sans", sans-serif;
-}
-
-.heading {
-  text-align: center;
+  font-size: 1.3;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0.5px 1px 4px 0.5px #ec41ad;
+}
+
+.banner__body .button:hover {
+  background-color: #f788ce;
 }
 
 html {
@@ -407,6 +424,16 @@ html {
 
 h1, h2, h3 {
   margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -418,7 +445,12 @@ li {
 }
 
 .contenedor {
-  width: 95%;
+  width: 90%;
   max-width: 120rem;
+  margin: 0 auto;
+}
+
+.contenedor--body {
+  width: 78%;
   margin: 0 auto;
 }

@@ -11,8 +11,13 @@ html {
 
 h1,h2,h3{
     margin: 0;
+    font-family: $fuenteHeading;
 }
-
+h1{font-size: 2.6rem;}
+body{
+    font-size: $fontsize;
+    font-family: $fuenteBody;
+}
 a{
     text-decoration: none;
 }
@@ -20,8 +25,13 @@ li{
     list-style: none;
 }
 .contenedor{
-    width: 95%;
+    width: 90%;
     max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor--body{
+    width: 78%;
     margin: 0 auto;
 }
 
