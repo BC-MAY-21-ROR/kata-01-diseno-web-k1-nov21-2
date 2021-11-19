@@ -1,3 +1,40 @@
-footer{
+.footer{
     background-color: #00252e;
+    padding: 13rem 0 0 0;
+    color: #fff;
+    &__contact{
+        .footer__logo{
+            width: 18rem;
+        }
+    }
+    .contact__location,
+    .contact__phone,
+    .contact__mail{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        img{
+            width: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .contact__location{
+        img{
+            position: relative;
+            top: -2rem;
+            margin-right: 2.83rem;
+        }
+    }
 }
+
+// .contact__location{
+//     display: grid;
+//     grid-template-columns: 0.3fr 3fr;
+//     align-items:baseline;
+//     p {
+//         margin: 0;
+//     }
+// }
