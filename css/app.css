@@ -410,6 +410,10 @@ template {
   background-color: #f788ce;
 }
 
+footer {
+  background-color: #00252e;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -475,4 +479,25 @@ li {
   padding: 0 2rem;
   line-height: 1.5;
   color: #504f4f;
+}
+
+.card .get-started__title {
+  margin-top: 2.2rem;
+}
+
+.card .button {
+  background-color: #ff52bf;
+  border: none;
+  outline: none;
+  font-size: 1.3;
+  margin: 2.2rem 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 1.5rem 4.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0.5px 1px 4px 0.5px #ec41ad;
+}
+
+.card .button:hover {
+  background-color: #f788ce;
 }
