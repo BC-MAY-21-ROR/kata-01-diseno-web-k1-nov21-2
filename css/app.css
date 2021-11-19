@@ -444,6 +444,43 @@ template {
   margin-right: 2.83rem;
 }
 
+.footer__menu {
+  padding: 2.7rem 0;
+}
+
+.footer__menu ul {
+  margin: 0;
+}
+
+.footer__menu ul li {
+  margin: 1.8rem 0;
+}
+
+.footer__menu ul li a {
+  color: #ffff;
+  font-size: 1.7rem;
+}
+
+.footer__social-media {
+  text-align: center;
+}
+
+.footer__social-media i {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0.5rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.9rem;
+}
+
+.footer__copyright {
+  padding: 2.3rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
