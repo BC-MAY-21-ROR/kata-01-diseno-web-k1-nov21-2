@@ -345,6 +345,8 @@ template {
 }
 
 .banner__header {
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -372,6 +374,8 @@ template {
 }
 
 .banner__body {
+  width: 78%;
+  margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 3rem;
   display: flex;
@@ -390,10 +394,6 @@ template {
   margin-top: 2.5rem;
 }
 
-.banner__body .body__image {
-  width: 100%;
-}
-
 .banner__body .button {
   background-color: #ff52bf;
   border: none;
@@ -408,6 +408,60 @@ template {
 
 .banner__body .button:hover {
   background-color: #f788ce;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .banner__body {
+    width: 78%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner__body .body__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .banner__header {
+    position: relative;
+    margin: auto;
+  }
+  .banner__header .header__logo {
+    width: 18rem;
+    height: 3.2rem;
+  }
+  .banner__header .button {
+    padding: 1rem 4.3rem;
+    font-size: 1.8rem;
+  }
+  .banner__body {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .banner__body div {
+    text-align: left;
+  }
+  .banner__body div .body__title {
+    font-size: 4.8rem;
+  }
+  .banner__body div .body__text {
+    font-size: 2.1rem;
+  }
+  .banner .body__image {
+    width: 50%;
+  }
 }
 
 .footer {
@@ -518,11 +572,6 @@ li {
 .contenedor {
   width: 90%;
   max-width: 120rem;
-  margin: 0 auto;
-}
-
-.contenedor--body {
-  width: 78%;
   margin: 0 auto;
 }
 
