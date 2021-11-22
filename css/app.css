@@ -345,28 +345,28 @@ template {
 }
 
 .banner__header {
-  width: 90%;
-  margin: auto;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: auto;
   padding-top: 3rem;
+  width: 90%;
 }
 
 .banner__header .header__logo {
-  width: 11rem;
   height: 2rem;
+  width: 11rem;
 }
 
 .banner__header .button {
-  padding: 0.8rem 2rem;
-  border: none;
-  outline: none;
-  font-family: "Poppins", sans-serif;
-  border-radius: 1.9rem;
-  font-size: 1.3rem;
   background-color: #fff;
+  border-radius: 1.9rem;
+  border: none;
   box-shadow: 1px 2px 8px 1px #d6eff1;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  outline: none;
+  padding: 0.8rem 2rem;
 }
 
 .banner__header .button:hover {
@@ -374,36 +374,36 @@ template {
 }
 
 .banner__body {
-  width: 78%;
-  margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  display: flex;
-  gap: 5rem;
-  justify-content: center;
   align-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
   text-align: center;
+  width: 78%;
 }
 
 .banner__body .body__text {
-  line-height: 1.5;
   font-size: 1.55rem;
+  line-height: 1.5;
   margin-bottom: 3rem;
   margin-top: 2.5rem;
 }
 
 .banner__body .button {
   background-color: #ff52bf;
-  border: none;
-  outline: none;
-  font-size: 1.3;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  padding: 1.5rem 3.5rem;
   border-radius: 2.5rem;
+  border: none;
   box-shadow: 0.5px 1px 4px 0.5px #ec41ad;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3;
+  outline: none;
+  padding: 1.5rem 3.5rem;
 }
 
 .banner__body .button:hover {
@@ -412,17 +412,17 @@ template {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .banner__body {
-    width: 78%;
-    margin: 0 auto;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
     align-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
     text-align: center;
+    width: 78%;
   }
   .banner__body .body__image {
     width: 100%;
@@ -431,24 +431,24 @@ template {
 
 @media (min-width: 1440px) and (max-width: 1920px) {
   .banner__header {
-    position: relative;
     margin: auto;
+    position: relative;
   }
   .banner__header .header__logo {
-    width: 18rem;
     height: 3.2rem;
+    width: 18rem;
   }
   .banner__header .button {
-    padding: 1rem 4.3rem;
     font-size: 1.8rem;
+    padding: 1rem 4.3rem;
   }
   .banner__body {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
     align-content: center;
     align-items: center;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
   }
   .banner__body div {
     text-align: left;
@@ -607,7 +607,7 @@ li {
   color: #fff;
   padding: 1.5rem 4.5rem;
   border-radius: 2.5rem;
-  box-shadow: 0.5px 1px 4px 0.5px #ec41ad;
+  box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
 }
 
 .card .button:hover {
@@ -627,4 +627,48 @@ li {
 
 .card__item--shwDark {
   box-shadow: 0px -5px 25px 2px rgba(163, 163, 163, 0.425);
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .card {
+    margin-top: 10rem;
+  }
+  .card__item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+    align-items: center;
+    align-items: center;
+    padding-left: 10rem;
+    gap: 10rem;
+    box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
+  }
+  .card__title, .card__text {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .card__text p {
+    font-size: 1.79rem;
+  }
+  .card > div:nth-child(odd) .card__img {
+    grid-column: 2/3;
+  }
+  .card > div:nth-child(even) {
+    padding-right: 1.8rem;
+  }
+  .card > div:nth-child(4) {
+    display: block;
+    position: relative;
+    top: 7rem;
+    width: 55%;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .card > div:nth-child(4) .button {
+    margin-top: 3rem;
+    box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
+  }
 }
