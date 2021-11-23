@@ -466,8 +466,8 @@ template {
 
 .footer {
   background-color: #00252e;
-  padding: 13rem 0 0 0;
   color: #fff;
+  padding: 13rem 0 0 0;
 }
 
 .footer__contact .footer__logo {
@@ -477,25 +477,25 @@ template {
 .footer .contact__location,
 .footer .contact__phone,
 .footer .contact__mail {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
   align-content: center;
   align-items: center;
+  display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .footer .contact__location img,
 .footer .contact__phone img,
 .footer .contact__mail img {
-  width: 2rem;
   margin-right: 2rem;
+  width: 2rem;
 }
 
 .footer .contact__location img {
+  margin-right: 2.83rem;
   position: relative;
   top: -2rem;
-  margin-right: 2.83rem;
 }
 
 .footer__menu {
@@ -520,19 +520,57 @@ template {
 }
 
 .footer__social-media i {
-  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 1.9rem;
   height: 4rem;
   margin: 0 0.5rem;
   padding: 1rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  font-size: 1.9rem;
+  width: 4rem;
 }
 
 .footer__copyright {
+  font-size: 1.2rem;
   padding: 2.3rem 0;
   text-align: center;
-  font-size: 1.2rem;
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .footer .footer__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 120rem;
+    padding-bottom: 3rem;
+    width: 90%;
+  }
+  .footer .logo {
+    grid-column: 1/4;
+    margin-bottom: 1.8rem;
+  }
+  .footer .footer__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0;
+    padding-left: 10rem;
+  }
+  .footer .footer__copyright {
+    grid-column: 3/4;
+    text-align: left;
+  }
+  .footer .footer__social-media {
+    text-align: left;
+  }
+  .footer .footer__social-media .fa-facebook {
+    text-align: center;
+  }
+  .footer .footer__social-media, .footer .footer__copyright {
+    padding-left: 10rem;
+  }
+  .footer .contact__location img {
+    top: 0rem;
+  }
 }
 
 html {
@@ -576,11 +614,11 @@ li {
 }
 
 .card__item {
-  padding: 1.2rem;
-  margin: 5.5rem 0;
-  text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0px 0px 15px 8px rgba(214, 214, 214, 0.377);
+  margin: 5.5rem 0;
+  padding: 1.2rem;
+  text-align: center;
 }
 
 .card__img {
@@ -592,22 +630,22 @@ li {
 }
 
 .card__text {
-  padding: 0 2rem;
-  line-height: 1.5;
   color: #504f4f;
+  line-height: 1.5;
+  padding: 0 2rem;
 }
 
 .card .button {
   background-color: #ff52bf;
+  border-radius: 2.5rem;
   border: none;
-  outline: none;
+  box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   font-size: 1.3;
   margin: 2.2rem 0;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+  outline: none;
   padding: 1.5rem 4.5rem;
-  border-radius: 2.5rem;
-  box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
 }
 
 .card .button:hover {
@@ -615,10 +653,10 @@ li {
 }
 
 .get-started {
-  position: relative;
-  margin-top: 10rem;
-  margin-bottom: -6.5rem;
   background-color: #fff;
+  margin-bottom: -6.5rem;
+  margin-top: 10rem;
+  position: relative;
 }
 
 .get-started__title {
@@ -640,14 +678,14 @@ li {
     margin: 3rem;
     align-items: center;
     align-items: center;
-    padding-left: 10rem;
-    gap: 10rem;
     box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
+    gap: 10rem;
+    padding-left: 10rem;
   }
   .card__title, .card__text {
+    margin: 0;
     text-align: left;
     padding: 0;
-    margin: 0;
   }
   .card__text p {
     font-size: 1.79rem;
@@ -659,16 +697,16 @@ li {
     padding-right: 1.8rem;
   }
   .card > div:nth-child(4) {
+    align-items: center;
     display: block;
+    margin: 0 auto;
+    padding: 2rem;
     position: relative;
     top: 7rem;
     width: 55%;
-    align-items: center;
-    padding: 2rem;
-    margin: 0 auto;
   }
   .card > div:nth-child(4) .button {
-    margin-top: 3rem;
     box-shadow: 0px 0px 6px 2px rgba(163, 163, 163, 0.274);
+    margin-top: 3rem;
   }
 }
